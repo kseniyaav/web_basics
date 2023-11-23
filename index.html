@@ -124,6 +124,24 @@
         .lh-tight {
             line-height: 1.25;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </style>
 
 </head>
@@ -266,9 +284,10 @@
             </div>
         </header>
 
-        <main class="row">
+        <main class="container">
             <div class="row text-center">
                 <div class="col-4">
+
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
                             <h4 class="my-0 fw-normal">Товар 1</h4>
@@ -281,29 +300,139 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-success">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <form class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label">Имя</label>
+                                <input type="text" class="form-control" id="exampleInputName"
+                                       aria-describedby="NameHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-8">
+
+                    <div class="accordion" id="faqAccordion">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Как купить?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ответ на вопрос "Как купить?" Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Как доставить?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ответ на вопрос "Как доставить?" Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    Какая гарантия?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ответ на вопрос "Какая гарантия?" Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </div>
+                            </div>
+
+
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Название товара</th>
+                                    <th scope="col">Цена за штуку</th>
+                                    <th scope="col">Количество</th>
+                                    <th scope="col">Итоговая сумма</th>
+                                    <th scope="col">Статус заказа</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Товар 1</td>
+                                    <td>$100</td>
+                                    <td>2</td>
+                                    <td>$200</td>
+                                    <td>В обработке</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Товар 2</td>
+                                    <td>$150</td>
+                                    <td>3</td>
+                                    <td>$450</td>
+                                    <td>Отправлен</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-
-    </div>
-
+     </div>
 </main>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
 <script>
-    /* global bootstrap: false */
-    (function () {
+
+        /* global bootstrap: false */
+        (function () {
         'use strict'
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-            new bootstrap.Tooltip(tooltipTriggerEl)
+        new bootstrap.Tooltip(tooltipTriggerEl)
         })
-    })()
+        })()
+
+
+
+
+
 </script>
 </body>
 </html>
